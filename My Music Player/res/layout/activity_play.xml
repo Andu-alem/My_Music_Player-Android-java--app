@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:text="@string/initial_time" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:text="@string/initial_time" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@color/appcol"
+        android:onClick="next"
+        android:text="Next"
+        android:textColor="@color/listBgd"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:background="@color/appcol"
+        android:onClick="previous"
+        android:text="Previous"
+        android:textColor="@color/listBgd"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:clickable="true"
+        android:onClick="random"
+        android:text="Shuffle"
+        android:textColor="@color/bgd"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/button1"
+        android:background="@color/appcol"
+        android:onClick="play"
+        android:text="Play"
+        android:textColor="@color/listBgd"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/button3"
+        android:background="@color/appcol"
+        android:onClick="pause"
+        android:text="Pause"
+        android:textColor="@color/listBgd"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar1"
+        android:layout_alignRight="@+id/button3"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:onClick="repeat"
+        android:text="Repeat Off"
+        android:textColor="@color/bgd"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="282dp"
+        android:layout_above="@+id/random"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/imgx" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/textView4"
+        android:paddingLeft="15dp"
+        android:text="TextView"
+        android:textColor="@color/bgd"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:maxLines="2"
+        android:paddingLeft="15dp"
+        android:text="TextView"
+        android:textColor="@color/appcol"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>
