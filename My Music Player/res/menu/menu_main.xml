@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/nowPlaying"
+        android:showAsAction="always|withText"
+        android:title="Now Playing"
+        />
+    <item android:id="@+id/another"
+        android:showAsAction="always|withText"
+        android:title="Another"
+        />
+    <item android:id="@+id/gridView"
+        android:title="GridView"/>
+    <item android:id="@+id/customMusic"
+        android:title="Play Music"/>
+    <item android:id="@+id/item3"
+        android:title="Download images"/>
+    <item android:id="@+id/item4"
+        android:title="Image Gallary"/>
+
+</menu>
