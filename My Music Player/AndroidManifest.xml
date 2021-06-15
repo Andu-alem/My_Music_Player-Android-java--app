@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.swipetabapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.swipetabapp.SwipeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".Act1"
+                  android:label="Start"
+                  android:theme="@style/AppTheme">
+        </activity>
+         <activity android:name=".ActivityGrid"
+                  android:label="Pictures"
+                  android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".PlayActivity"
+                  android:label="Start"
+                  android:theme="@style/AppTheme"
+                  android:parentActivityName=".SwipeActivity"
+           >
+            	<!-- used for actionbar backbutton  -->
+                  <!-- Parent activity meta-data to support 4.0 and lower  -->
+                  <meta-data
+                      android:name="android.support.PARENT_ACTIVITY"
+                      android:value="com.example.Swipetabapp.SwipeActivity"
+                      />
+        </activity>
+        <activity android:name=".ShowImageActivity"
+                  android:label="Pictures"
+                  android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+        <activity android:name=".ListImageActivity"
+                  android:label="Pictures"
+                  android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+        <activity android:name=".ShowGallaryImage"
+                  android:label="Pictures"
+                  android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+        <activity android:name=".GallaryActivity"
+                  android:label="Pictures"
+                  android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+         <activity android:name=".GridImageViewActivity"
+                  android:label="Pictures"
+                  android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+        <activity android:name=".ListFileActivity"
+                  android:label="Pictures"
+                  android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+        
+       <activity android:name=".MusicListActivity"
+                  android:label="Musics"
+                  android:theme="@android:style/Theme.Holo.Light">
+        </activity>
+        <activity android:name=".MusicPlayer"
+                  android:label="Now Playing"
+                  android:theme="@android:style/Theme.Holo.Light">
+        </activity>
+          <activity android:name=".MusicPlayerFragment"
+                  android:label="Now Playing"
+                  android:theme="@android:style/Theme.Holo.Light">
+        </activity>
+        <activity android:name=".NowPlayingActivity"
+                  android:label="Now Playing"
+                  android:theme="@android:style/Theme.Holo.Light">
+       
+        </activity>
+        <activity android:name=".CustomMusicActivity"
+                  android:label="Custom Music Lists"
+                  android:theme="@android:style/Theme.Holo.Light">
+        </activity>
+         <activity android:name=".MusicPlayerActivity"
+                  android:label="Now Playing"
+                  android:theme="@android:style/Theme.Holo.Light">
+        </activity>
+        
+        <service android:name=".MediaPlayerService"/>
+        
+    </application>
+
+</manifest>
